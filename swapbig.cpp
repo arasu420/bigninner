@@ -1,21 +1,21 @@
 #include <iostream>
 
 using namespace std;
-class Swapop{
+class Swap{
 public:
-    int x,y,z;
+    int a,b,z;
     int get()
     {
-        cin>>x>>y;
+        cin>>a>>b;
         return 0;
     }
     int calc()
     {
-        if(x<=100000 && y<=100000)
-     {z=x;
-     x=y;
-     y=z;
-     cout<<x<<y;}
+        if(a<=100000 && b<=100000)
+     {z=a;
+     a=b;
+     b=z;
+     cout<<a<<b;}
      return 0;
     }
 };
