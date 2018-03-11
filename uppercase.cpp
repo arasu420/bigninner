@@ -9,7 +9,7 @@ public:
     int get()
     {
 
-        cin>>str;
+        getline(cin,str);
         return 0;
     }
     int calc()
