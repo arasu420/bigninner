@@ -21,7 +21,7 @@ public:
 };
 int main()
 {
-    Swapop s;
+    Swap s;
     s.get();
     s.calc();
     return 0;
