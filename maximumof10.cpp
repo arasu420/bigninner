@@ -7,7 +7,7 @@ public:
     int c = 0;
     int get()
     {
-        for(int i=0;i<=10;i++)
+        for(int i=0;i<10;i++)
         {
         cin>>x[i];
         }
@@ -15,7 +15,7 @@ public:
     }
     int calc()
     {
-       for(int i=0;i<=10;i++)
+       for(int i=0;i<10;i++)
         {
             if(c<x[i])
             {
