@@ -6,6 +6,7 @@ class SAMPLE{
 public:
     locale loc;
     string str;
+    int count=0;
     int get()
     {
 
@@ -14,9 +15,24 @@ public:
     }
     int calc()
     {
-       for (string::size_type i=0; i<str.length(); ++i)
-    cout << toupper(str[i],loc);
-       return 0;
+       for (string::size_type i=0; i<str.length(); ++i){
+       if(i==0){
+        cout<<toupper(str[i],loc);
+        i=i+1;
+        count=0;
+       }
+       if(str.at(i)==' '){
+            count=1;}
+       if(count==1){
+            i=i+1;
+    cout << " "<<toupper(str[i],loc);
+    count=0;
+    }
+    else{
+        cout<<str[i];
+
+    }
+     }  return 0;
 
     }
 };
